@@ -8,7 +8,7 @@ function App() {
       <nav className='navbar'>
         <div className='container nav-content'>
           <a href='#home' className='nav-logo'>
-            Keith Rincon
+            Keith Rincon <span className='logo-sub'>Web Design</span>
           </a>
 
           <button
@@ -23,12 +23,11 @@ function App() {
             <a href='#services'>Services</a>
             <a href='#projects'>Projects</a>
             <a href='#contact' className='nav-cta'>
-              Start a Project
+              Get a Free Quote
             </a>
           </div>
         </div>
       </nav>
-
       <section className='hero' id='home'>
         <div className='container hero-grid'>
           <div className='hero-copy'>
@@ -36,7 +35,10 @@ function App() {
             <h1>Keith Rincon builds modern websites for local businesses.</h1>
             <p className='hero-text'>
               I help local businesses create clean, professional websites that
-              attract customers, build trust, and make it easy to get in touch.
+              attract customers, build trust, and generate more leads.
+            </p>
+            <p className='hero-location'>
+              Based in Northern California • Serving local businesses
             </p>
             <div className='hero-actions'>
               <a href='#projects' className='btn btn-primary'>
@@ -57,6 +59,9 @@ function App() {
               </div>
               <div className='card-content'>
                 <p className='card-label'>What I help with</p>
+                <p className='card-highlight'>
+                  Designed to turn visitors into customers.
+                </p>
                 <ul>
                   <li>Business websites</li>
                   <li>Landing pages</li>
@@ -68,7 +73,6 @@ function App() {
           </div>
         </div>
       </section>
-
       <section className='trust'>
         <div className='container trust-content'>
           <p>
@@ -77,7 +81,6 @@ function App() {
           </p>
         </div>
       </section>
-
       <section className='about' id='about'>
         <div className='container about-grid'>
           <div>
@@ -106,7 +109,6 @@ function App() {
           </div>
         </div>
       </section>
-
       <section className='services' id='services'>
         <div className='container'>
           <div className='section-heading'>
@@ -148,7 +150,6 @@ function App() {
           </div>
         </div>
       </section>
-
       <section className='projects' id='projects'>
         <div className='container'>
           <div className='section-heading'>
@@ -249,7 +250,6 @@ function App() {
           </div>
         </div>
       </section>
-
       <section className='contact' id='contact'>
         <div className='container contact-container'>
           <div className='contact-card'>
@@ -282,7 +282,6 @@ function App() {
           </div>
         </div>
       </section>
-
       <footer className='footer'>
         <div className='container footer-content'>
           <p>© {new Date().getFullYear()} Keith Rincon</p>

@@ -77,6 +77,11 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 0;
+  position: relative;
+}
+
+.menu-toggle {
+  margin-left: auto;
 }
 
 .nav-logo {
@@ -84,6 +89,12 @@ a {
   font-size: 1rem;
   letter-spacing: 0.04em;
   color: var(--text);
+}
+
+.logo-sub {
+  font-size: 0.7rem;
+  color: var(--muted);
+  display: block;
 }
 
 .nav-links {
@@ -103,25 +114,19 @@ a {
 }
 
 .nav-cta {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
   background: var(--accent);
   color: #111827 !important;
-  padding: 0.6rem 1rem;
+  padding: 0.6rem 1.1rem;
   border-radius: 999px;
   font-weight: 700;
-  border: 1px solid transparent;
-  transition:
-    background 0.2s ease,
-    color 0.2s ease,
-    transform 0.2s ease;
+  font-size: 0.9rem;
+  box-shadow: 0 8px 20px rgba(245, 196, 81, 0.25);
+  transition: all 0.2s ease;
 }
 
 .nav-cta:hover {
   background: var(--accent-dark);
-  color: #111827 !important;
-  transform: translateY(-1px);
+  transform: translateY(-2px);
 }
 
 /* HERO */
@@ -159,6 +164,11 @@ h1 {
   color: var(--muted);
   font-size: 1.1rem;
   line-height: 1.75;
+}
+.hero-location {
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+  color: var(--muted);
 }
 
 .hero-actions {
@@ -218,6 +228,12 @@ h1 {
   box-shadow: var(--shadow);
   overflow: hidden;
   backdrop-filter: blur(14px);
+}
+.card-highlight {
+  font-size: 0.9rem;
+  color: var(--text);
+  margin-bottom: 1rem;
+  font-weight: 500;
 }
 
 .card-dots {
@@ -604,20 +620,25 @@ h1 {
 
 @media (max-width: 900px) {
   .nav-content {
-    flex-wrap: wrap;
-    gap: 1rem;
+    flex-direction: row;
   }
-
   .menu-toggle {
     display: block;
+    margin-left: auto;
+    font-size: 1.6rem;
   }
 
   .nav-links {
+    position: absolute;
+    top: 65px;
+    left: 0;
     width: 100%;
+    background: rgba(11, 17, 32, 0.98);
+    backdrop-filter: blur(12px);
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
-    margin-top: 1rem;
+    padding: 1.5rem 0;
+    gap: 1.2rem;
     display: none;
   }
 
