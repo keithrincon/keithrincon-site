@@ -28,19 +28,18 @@ body {
     BlinkMacSystemFont,
     'Segoe UI',
     sans-serif;
-  background:
-    radial-gradient(circle at 20% 10%, rgba(245, 196, 81, 0.08), transparent 30%),
-    radial-gradient(circle at 80% 90%, rgba(59, 130, 246, 0.08), transparent 30%),
-    var(--bg);
-
-  color: var(--text);
-
+  background-color: var(--bg);
+  background-image:
     radial-gradient(
-      circle at bottom right,
-      rgba(59, 130, 246, 0.08),
-      transparent 25%
+      circle at 20% 10%,
+      rgba(245, 196, 81, 0.08),
+      transparent 30%
     ),
-    var(--bg);
+    radial-gradient(
+      circle at 80% 90%,
+      rgba(59, 130, 246, 0.08),
+      transparent 30%
+    );
   color: var(--text);
 }
 
@@ -101,10 +100,9 @@ a {
   color: var(--muted);
 }
 
-
 @media (max-width: 600px) {
   .container {
-    width: min(1120px, 100% - 2.25rem);
+    width: min(1120px, calc(100% - 2.25rem));
   }
 }
 
@@ -397,12 +395,12 @@ h1 {
   border: 1px solid var(--line);
   border-radius: 24px;
   padding: 1.5rem;
-background: linear-gradient(
-  180deg,
-  rgba(255, 255, 255, 0.06),
-  rgba(255, 255, 255, 0.02)
-);
-backdrop-filter: blur(14px);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.06),
+    rgba(255, 255, 255, 0.02)
+  );
+  backdrop-filter: blur(14px);
   box-shadow: var(--shadow);
   transition:
     transform 0.2s ease,
@@ -474,11 +472,11 @@ backdrop-filter: blur(14px);
   border-radius: 24px;
   overflow: hidden;
   background: linear-gradient(
-  180deg,
-  rgba(255, 255, 255, 0.06),
-  rgba(255, 255, 255, 0.02)
-);
-backdrop-filter: blur(14px);
+    180deg,
+    rgba(255, 255, 255, 0.06),
+    rgba(255, 255, 255, 0.02)
+  );
+  backdrop-filter: blur(14px);
   box-shadow: var(--shadow);
   transition:
     transform 0.2s ease,
@@ -554,11 +552,11 @@ backdrop-filter: blur(14px);
   border-radius: 28px;
   border: 1px solid var(--line);
   background: linear-gradient(
-  180deg,
-  rgba(255, 255, 255, 0.06),
-  rgba(255, 255, 255, 0.02)
-);
-backdrop-filter: blur(14px);
+    180deg,
+    rgba(255, 255, 255, 0.06),
+    rgba(255, 255, 255, 0.02)
+  );
+  backdrop-filter: blur(14px);
   box-shadow: var(--shadow);
   text-align: center;
 }
