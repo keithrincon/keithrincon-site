@@ -8,7 +8,7 @@ function App() {
       <nav className='navbar'>
         <div className='container nav-content'>
           <a href='#home' className='nav-logo'>
-            Keith Rincon <span className='logo-sub'>Web Design</span>
+            Rincon Web Studio<span className='logo-sub'>Web Design</span>
           </a>
 
           <button
@@ -32,10 +32,11 @@ function App() {
         <div className='container hero-grid'>
           <div className='hero-copy'>
             <p className='eyebrow'>Web Design • Development • Bilingual</p>
-            <h1>Keith Rincon builds modern websites for local businesses.</h1>
+            <h1> Websites that help local businesses get more customers.</h1>
             <p className='hero-text'>
-              I help local businesses create clean, professional websites that
-              attract customers, build trust, and generate more leads.
+              I design and build modern websites that make your business look
+              professional, rank better on Google, and turn visitors into
+              customers.
             </p>
             <p className='hero-location'>
               Based in Northern California • Serving local businesses
@@ -76,12 +77,12 @@ function App() {
       <section className='trust'>
         <div className='container trust-content'>
           <p>
-            Trusted by local businesses like Guadalajara Mexican Restaurant and
-            DNA Tennis & Pickleball Club.
+            Helping local businesses improve their online presence and attract
+            more customers.
           </p>
         </div>
       </section>
-      <section className='about' id='about'>
+      <section className='about section-alt' id='about'>
         <div className='container about-grid'>
           <div>
             <h2>About Me</h2>
@@ -109,7 +110,7 @@ function App() {
           </div>
         </div>
       </section>
-      <section className='services' id='services'>
+      <section className='services section-glow' id='services'>
         <div className='container'>
           <div className='section-heading'>
             <p className='eyebrow'>Services</p>
@@ -150,7 +151,24 @@ function App() {
           </div>
         </div>
       </section>
-      <section className='projects' id='projects'>
+      <section className='pricing'>
+        <div className='container pricing-container'>
+          <p className='eyebrow'>Pricing</p>
+          <h2>Simple, transparent pricing</h2>
+
+          <p className='pricing-text'>
+            Most websites for local businesses fall between $400 and $800
+            depending on what you need. I keep things simple, clean, and focused
+            on helping your customers find you and contact you easily.
+          </p>
+
+          <p className='pricing-sub'>
+            Optional monthly management is available if you’d like ongoing
+            updates and support.
+          </p>
+        </div>
+      </section>
+      <section className='projects section-alt' id='projects'>
         <div className='container'>
           <div className='section-heading'>
             <p className='eyebrow'>Selected Work</p>
@@ -250,7 +268,23 @@ function App() {
           </div>
         </div>
       </section>
-      <section className='contact' id='contact'>
+
+      <section className='process'>
+        <div className='container'>
+          <div className='section-heading'>
+            <p className='eyebrow'>Process</p>
+            <h2>Simple and clear process</h2>
+          </div>
+
+          <div className='process-grid'>
+            <div>1. We talk about your business</div>
+            <div>2. I design and build your site</div>
+            <div>3. You go live and get customers</div>
+          </div>
+        </div>
+      </section>
+
+      <section className='contact section-glow' id='contact'>
         <div className='container contact-container'>
           <div className='contact-card'>
             <p className='eyebrow'>Start a Project</p>
@@ -271,7 +305,7 @@ function App() {
               </a>
 
               <a
-                href='https://www.linkedin.com'
+                href='https://www.linkedin.com/in/keithrincon/'
                 target='_blank'
                 rel='noreferrer'
                 className='btn btn-secondary'
@@ -284,7 +318,7 @@ function App() {
       </section>
       <footer className='footer'>
         <div className='container footer-content'>
-          <p>© {new Date().getFullYear()} Keith Rincon</p>
+          <p className='footer-brand'>Rincon Web Studio</p>
 
           <div className='footer-links'>
             <a href='#about'>About</a>
@@ -292,6 +326,10 @@ function App() {
             <a href='#projects'>Projects</a>
             <a href='mailto:keithrt3008@gmail.com'>Email</a>
           </div>
+
+          <p className='footer-copy'>
+            © {new Date().getFullYear()} Rincon Web Studio
+          </p>
         </div>
       </footer>
     </main>
