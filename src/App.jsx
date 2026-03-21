@@ -29,24 +29,31 @@ function App() {
         </div>
       </nav>
       <section className='hero' id='home'>
+        <video className='hero-video' autoPlay muted loop playsInline>
+          <source src='/sundial.mp4' type='video/mp4' />
+        </video>
+
+        <div className='hero-overlay'></div>
+
         <div className='container hero-grid'>
           <div className='hero-copy'>
             <p className='eyebrow'>Web Design • Development • Bilingual</p>
-            <h1> Websites that help local businesses get more customers.</h1>
+            <h1>Websites that help local businesses get more customers.</h1>
             <p className='hero-text'>
               I design and build modern websites that make your business look
-              professional, rank better on Google, and turn visitors into
-              customers.
+              professional, build trust, and turn visitors into customers.
             </p>
+
             <p className='hero-location'>
               Based in Northern California • Serving local businesses
             </p>
+
             <div className='hero-actions'>
               <a href='#projects' className='btn btn-primary'>
                 View Work
               </a>
               <a href='#contact' className='btn btn-secondary'>
-                Start a Project
+                Get a Free Quote
               </a>
             </div>
           </div>
